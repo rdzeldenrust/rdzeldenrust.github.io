@@ -116,7 +116,7 @@
         .enter().insert("a", "br")
           .attr("class", "example")
           .attr("title", function(d) {return "By " + d.owner + " <" + d.created_at + ">";})
-          .attr("href", function(d) { return "C:\Users/reinier/Downloads/hydra-gh-pages/hydra-gh-pages/viewer?owner=" + d.owner + "&fork=" + d.fork + "&id=" + encodeURIComponent(d.id); })
+          .attr("href", function(d) { return "http://rdzeldenrust.github.io/viewer?owner=" + d.owner + "&fork=" + d.fork + "&id=" + encodeURIComponent(d.id); })
             .style("background-image", function(d) { return "url(" + d.thumbnail + ")";});
 
       exampleEnter.append("span")
