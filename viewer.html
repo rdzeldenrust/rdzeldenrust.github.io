@@ -123,7 +123,7 @@ function parseUri(){
 		id = inputParameters.id;
 
 	// read the json file
-	var githubBase = "file:///C:/Users/reinier/Desktop/HydraTest/Test_RZ";
+	var githubBase = "https://raw.githubusercontent.com/" + owner + "/" + fork + "/master/" + id;
 	var jsonFile = githubBase + "/input.json";
 
     d3.json(jsonFile, function(error, data){
